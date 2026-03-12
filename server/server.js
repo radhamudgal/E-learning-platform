@@ -23,7 +23,7 @@ app.use(mongoSanitize()); // Prevent MongoDB injection
 // CORS configuration
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? process.env.CLIENT_URL 
+    ? [process.env.CLIENT_URL, 'https://learnwme.netlify.app']
     : 'http://localhost:3000',
   credentials: true
 }));
