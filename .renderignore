@@ -1,0 +1,5 @@
+# Ignore client folder during backend deployment
+client/
+netlify.toml
+*.md
+.vscode/
